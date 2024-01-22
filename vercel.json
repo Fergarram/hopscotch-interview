@@ -3,6 +3,14 @@
     {
       "source": "/",
       "destination": "/index.html"
+    },
+    {
+      "source": "/:anything",
+      "destination": "/index.html"
+    },
+    {
+      "source": "/:anything/",
+      "destination": "/index.html"
     }
   ]
 }

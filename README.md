@@ -1,6 +1,6 @@
 # Hopscotch Frontend Test
 
-> Link to live site:
+> Link to live site: https://hopscotch-interview-test.vercel.app/
 
 I implemented this test using a personal template that uses Svelte, Tailwind, & Typescript. This template includes some utils that I often use in projects.
 
