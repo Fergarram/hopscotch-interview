@@ -1,0 +1,55 @@
+@tailwind base;
+@tailwind utilities;
+@layer utilities {
+    /* Hide scrollbar for Chrome, Safari and Opera */
+    .no-scrollbar::-webkit-scrollbar {
+        display: none;
+    }
+
+    /* Hide scrollbar for IE, Edge and Firefox */
+    .no-scrollbar {
+        -ms-overflow-style: none;
+        /* IE and Edge */
+        scrollbar-width: none;
+        /* Firefox */
+    }
+
+    .scroll-behavior-none {
+        overscroll-behavior: none;
+    }
+
+    input[type="number"]::-webkit-inner-spin-button,
+    input[type="number"]::-webkit-outer-spin-button {
+        @apply appearance-none;
+    }
+}
+
+input:autofill {
+    background: rgba(255, 183, 0, 0.1);
+}
+
+input:-internal-autofill-selected {
+    appearance: none;
+    background: none !important;
+    color: fieldtext !important;
+}
+
+@font-face {
+    font-family: "Material Icons";
+    src: url(/assets/material-icons.woff2) format("woff2");
+    /* src: url(/assets/material-icons-rounded.otf) format("opentype"); */
+}
+
+.material-symbols-outlined {
+    font-family: "Material Icons";
+    line-height: 1;
+    letter-spacing: normal;
+    text-transform: none;
+    display: inline-block;
+    white-space: nowrap;
+    word-wrap: normal;
+    direction: ltr;
+    -webkit-font-feature-settings: "liga";
+    font-feature-settings: "liga";
+    -webkit-font-smoothing: antialiased;
+}

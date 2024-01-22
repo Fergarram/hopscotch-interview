@@ -1,0 +1,37 @@
+{
+  "name": "hopscotch-interview",
+  "private": true,
+  "version": "0.0.1",
+  "type": "module",
+  "main": "./src/main.ts",
+  "types": "./src/main.ts",
+  "scripts": {
+    "dev": "concurrently --kill-others \"npm run dev:client\" \"npm run dev:tailwind\"",
+    "dev:client": "vite dev",
+    "build": "npm run build:tailwind && vite build",
+    "start": "node dist",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json",
+    "build:tailwind": "tailwind -i ./src/index.css -o ./public/styles.css",
+    "dev:tailwind": "tailwind -i ./src/index.css -o ./public/styles.css --watch"
+  },
+  "dependencies": {
+    "@sveltejs/vite-plugin-svelte": "^2.4.2",
+    "@tsconfig/svelte": "^5.0.0",
+    "@vercel/node": "^3.0.7",
+    "autoprefixer": "^10.4.16",
+    "concurrently": "^8.2.2",
+    "express": "^4.18.2",
+    "postcss": "^8.4.31",
+    "svelte": "^4.0.0",
+    "svelte-check": "^3.4.4",
+    "svelte-routing": "^2.1.0",
+    "tailwind": "^4.0.0",
+    "tailwindcss": "^3.3.5",
+    "tslib": "^2.6.0",
+    "tsx": "^3.12.7",
+    "typescript": "^5.1.6",
+    "vite": "^4.3.9",
+    "vitest": "^0.32.4"
+  }
+}
